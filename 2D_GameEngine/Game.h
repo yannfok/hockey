@@ -11,6 +11,14 @@
 
 class FrameManager;
 
+
+typedef enum {
+
+    HALF_SIZE,
+    FULLSCREEN
+
+}Window_Size;
+
 class Game {
 private:
     FrameManager * m_fpsManager;

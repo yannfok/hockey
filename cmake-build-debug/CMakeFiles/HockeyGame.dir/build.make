@@ -168,6 +168,48 @@ CMakeFiles/HockeyGame.dir/models/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HockeyGame.dir/models/Player.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\yanni\CLionProjects\HockeyGame\models\Player.cpp -o CMakeFiles\HockeyGame.dir\models\Player.cpp.s
 
+CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj: CMakeFiles/HockeyGame.dir/flags.make
+CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj: CMakeFiles/HockeyGame.dir/includes_CXX.rsp
+CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj: ../models/Puck.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\yanni\CLionProjects\HockeyGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\HockeyGame.dir\models\Puck.cpp.obj -c C:\Users\yanni\CLionProjects\HockeyGame\models\Puck.cpp
+
+CMakeFiles/HockeyGame.dir/models/Puck.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HockeyGame.dir/models/Puck.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\yanni\CLionProjects\HockeyGame\models\Puck.cpp > CMakeFiles\HockeyGame.dir\models\Puck.cpp.i
+
+CMakeFiles/HockeyGame.dir/models/Puck.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HockeyGame.dir/models/Puck.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\yanni\CLionProjects\HockeyGame\models\Puck.cpp -o CMakeFiles\HockeyGame.dir\models\Puck.cpp.s
+
+CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.obj: CMakeFiles/HockeyGame.dir/flags.make
+CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.obj: CMakeFiles/HockeyGame.dir/includes_CXX.rsp
+CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.obj: ../2D_GameEngine/DisplayInformation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\yanni\CLionProjects\HockeyGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\HockeyGame.dir\2D_GameEngine\DisplayInformation.cpp.obj -c C:\Users\yanni\CLionProjects\HockeyGame\2D_GameEngine\DisplayInformation.cpp
+
+CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\yanni\CLionProjects\HockeyGame\2D_GameEngine\DisplayInformation.cpp > CMakeFiles\HockeyGame.dir\2D_GameEngine\DisplayInformation.cpp.i
+
+CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\yanni\CLionProjects\HockeyGame\2D_GameEngine\DisplayInformation.cpp -o CMakeFiles\HockeyGame.dir\2D_GameEngine\DisplayInformation.cpp.s
+
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.obj: CMakeFiles/HockeyGame.dir/flags.make
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.obj: CMakeFiles/HockeyGame.dir/includes_CXX.rsp
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.obj: ../2D_GameEngine/Position.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\yanni\CLionProjects\HockeyGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\HockeyGame.dir\2D_GameEngine\Position.cpp.obj -c C:\Users\yanni\CLionProjects\HockeyGame\2D_GameEngine\Position.cpp
+
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\yanni\CLionProjects\HockeyGame\2D_GameEngine\Position.cpp > CMakeFiles\HockeyGame.dir\2D_GameEngine\Position.cpp.i
+
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\yanni\CLionProjects\HockeyGame\2D_GameEngine\Position.cpp -o CMakeFiles\HockeyGame.dir\2D_GameEngine\Position.cpp.s
+
 # Object files for target HockeyGame
 HockeyGame_OBJECTS = \
 "CMakeFiles/HockeyGame.dir/main.cpp.obj" \
@@ -177,7 +219,10 @@ HockeyGame_OBJECTS = \
 "CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj" \
 "CMakeFiles/HockeyGame.dir/2D_GameEngine/Map.cpp.obj" \
 "CMakeFiles/HockeyGame.dir/2D_GameEngine/Background.cpp.obj" \
-"CMakeFiles/HockeyGame.dir/models/Player.cpp.obj"
+"CMakeFiles/HockeyGame.dir/models/Player.cpp.obj" \
+"CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj" \
+"CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.obj" \
+"CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.obj"
 
 # External object files for target HockeyGame
 HockeyGame_EXTERNAL_OBJECTS =
@@ -190,13 +235,16 @@ HockeyGame.exe: CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj
 HockeyGame.exe: CMakeFiles/HockeyGame.dir/2D_GameEngine/Map.cpp.obj
 HockeyGame.exe: CMakeFiles/HockeyGame.dir/2D_GameEngine/Background.cpp.obj
 HockeyGame.exe: CMakeFiles/HockeyGame.dir/models/Player.cpp.obj
+HockeyGame.exe: CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj
+HockeyGame.exe: CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.obj
+HockeyGame.exe: CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.obj
 HockeyGame.exe: CMakeFiles/HockeyGame.dir/build.make
 HockeyGame.exe: C:/MinGW/lib/libSDL2main.a
 HockeyGame.exe: C:/MinGW/lib/libSDL2.dll.a
 HockeyGame.exe: CMakeFiles/HockeyGame.dir/linklibs.rsp
 HockeyGame.exe: CMakeFiles/HockeyGame.dir/objects1.rsp
 HockeyGame.exe: CMakeFiles/HockeyGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\yanni\CLionProjects\HockeyGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable HockeyGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\yanni\CLionProjects\HockeyGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable HockeyGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\HockeyGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

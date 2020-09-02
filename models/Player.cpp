@@ -5,7 +5,7 @@
 #include "Player.h"
 #include "../2D_GameEngine/GameObject.h"
 
-void Player::Control(GameObject *gameObject) {
+void Player::init(GameObject *gameObject) {
 
     gameObject->setSrcRectH(64);
     gameObject->setSrcRectW(64);

@@ -9,7 +9,7 @@ class GameObject;
 
 class Player {
 public:
-    static void Control(GameObject * gameObject);
+    static void init(GameObject * gameObject);
 };
 
 

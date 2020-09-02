@@ -6,13 +6,17 @@
 #include <iostream>
 #include "Game.h"
 #include "../models/Player.h"
+#include "../models/Puck.h"
 #include "FrameManager.h"
 #include "TextureManager.h"
+#include "Position.h"
 #include "GameObject.h"
 #include "Background.h"
+#include "DisplayInformation.h"
 
 GameObject * player;
 GameObject * player2;
+GameObject * puck;
 Background * bg;
 SDL_Renderer * Game::_renderer = nullptr;
 int Game::_width = 0;
@@ -41,11 +45,18 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     int flags = 0;
     Game::_height = height;
     Game::_width = width;
-    if(fullscreen)
-        flags = SDL_WINDOW_FULLSCREEN;
     if(SDL_Init(SDL_INIT_EVERYTHING) != 0) {
         m_isRunning = false;
         throw runtime_error(SDL_GetError());
+    }
+    if(fullscreen) {
+        auto * di = new DisplayInformation();
+        flags = SDL_WINDOW_FULLSCREEN;
+        Game::_height = di->height;
+        Game::_width = di->width;
+        width = di->width;
+        height = di->height;
+        delete di;
     }
     m_window = SDL_CreateWindow(title,xpos,ypos,width,height,flags);
     if(!m_window) {
@@ -60,9 +71,10 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     SDL_SetRenderDrawColor(_renderer,255,255,255,255);
     m_isRunning = true;
 
-    player = new GameObject("../assets/player_texture.bmp",100,200,35,200);
-    player2 = new GameObject("../assets/player_texture.bmp",700,200,35,200);
+    player = new GameObject("../assets/player_texture.bmp",Position::LEFT1().at(0),Position::LEFT1().at(1),35,200);
+    player2 = new GameObject("../assets/player_texture.bmp",Position::LEFT2().at(0),Position::LEFT2().at(1),35,200);
     bg = new Background("../assets/background.bmp");
+    puck = new GameObject("../assets/kishtabis.bmp",Position::PUCK().at(0),Position::PUCK().at(1),120,120,0,0,0);
 
 }
 
@@ -103,10 +115,13 @@ void Game::update() {
         gameObject->setSrcRectY(0);
     });
     player->Update([](GameObject * gameObject){
-        Player::Control(gameObject);
+        Player::init(gameObject);
     });
     player2->Update([](GameObject * gameObject){
-        Player::Control(gameObject);
+        Player::init(gameObject);
+    });
+    puck->Update([](GameObject * gameObject){
+        Puck::init(gameObject);
     });
 
 }
@@ -117,6 +132,7 @@ void Game::render() {
     bg->Render();
     player->Render();
     player2->Render();
+    puck->Render();
     SDL_RenderPresent(Game::_renderer);
 
 }
@@ -135,4 +151,3 @@ void Game::loop(const std::function<void()>& callback) {
     }
 
 }
-

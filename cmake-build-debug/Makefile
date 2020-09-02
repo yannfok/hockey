@@ -149,6 +149,33 @@ HockeyGame/fast:
 	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/2D_GameEngine/Background.cpp.s
 .PHONY : 2D_GameEngine/Background.cpp.s
 
+2D_GameEngine/DisplayInformation.obj: 2D_GameEngine/DisplayInformation.cpp.obj
+
+.PHONY : 2D_GameEngine/DisplayInformation.obj
+
+# target to build an object file
+2D_GameEngine/DisplayInformation.cpp.obj:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.obj
+.PHONY : 2D_GameEngine/DisplayInformation.cpp.obj
+
+2D_GameEngine/DisplayInformation.i: 2D_GameEngine/DisplayInformation.cpp.i
+
+.PHONY : 2D_GameEngine/DisplayInformation.i
+
+# target to preprocess a source file
+2D_GameEngine/DisplayInformation.cpp.i:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.i
+.PHONY : 2D_GameEngine/DisplayInformation.cpp.i
+
+2D_GameEngine/DisplayInformation.s: 2D_GameEngine/DisplayInformation.cpp.s
+
+.PHONY : 2D_GameEngine/DisplayInformation.s
+
+# target to generate assembly for a file
+2D_GameEngine/DisplayInformation.cpp.s:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.s
+.PHONY : 2D_GameEngine/DisplayInformation.cpp.s
+
 2D_GameEngine/FrameManager.obj: 2D_GameEngine/FrameManager.cpp.obj
 
 .PHONY : 2D_GameEngine/FrameManager.obj
@@ -257,6 +284,33 @@ HockeyGame/fast:
 	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/2D_GameEngine/Map.cpp.s
 .PHONY : 2D_GameEngine/Map.cpp.s
 
+2D_GameEngine/Position.obj: 2D_GameEngine/Position.cpp.obj
+
+.PHONY : 2D_GameEngine/Position.obj
+
+# target to build an object file
+2D_GameEngine/Position.cpp.obj:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.obj
+.PHONY : 2D_GameEngine/Position.cpp.obj
+
+2D_GameEngine/Position.i: 2D_GameEngine/Position.cpp.i
+
+.PHONY : 2D_GameEngine/Position.i
+
+# target to preprocess a source file
+2D_GameEngine/Position.cpp.i:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.i
+.PHONY : 2D_GameEngine/Position.cpp.i
+
+2D_GameEngine/Position.s: 2D_GameEngine/Position.cpp.s
+
+.PHONY : 2D_GameEngine/Position.s
+
+# target to generate assembly for a file
+2D_GameEngine/Position.cpp.s:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.s
+.PHONY : 2D_GameEngine/Position.cpp.s
+
 2D_GameEngine/TextureManager.obj: 2D_GameEngine/TextureManager.cpp.obj
 
 .PHONY : 2D_GameEngine/TextureManager.obj
@@ -338,6 +392,33 @@ models/Player.cpp.s:
 	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/models/Player.cpp.s
 .PHONY : models/Player.cpp.s
 
+models/Puck.obj: models/Puck.cpp.obj
+
+.PHONY : models/Puck.obj
+
+# target to build an object file
+models/Puck.cpp.obj:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj
+.PHONY : models/Puck.cpp.obj
+
+models/Puck.i: models/Puck.cpp.i
+
+.PHONY : models/Puck.i
+
+# target to preprocess a source file
+models/Puck.cpp.i:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/models/Puck.cpp.i
+.PHONY : models/Puck.cpp.i
+
+models/Puck.s: models/Puck.cpp.s
+
+.PHONY : models/Puck.s
+
+# target to generate assembly for a file
+models/Puck.cpp.s:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/models/Puck.cpp.s
+.PHONY : models/Puck.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -350,6 +431,9 @@ help:
 	@echo ... 2D_GameEngine/Background.obj
 	@echo ... 2D_GameEngine/Background.i
 	@echo ... 2D_GameEngine/Background.s
+	@echo ... 2D_GameEngine/DisplayInformation.obj
+	@echo ... 2D_GameEngine/DisplayInformation.i
+	@echo ... 2D_GameEngine/DisplayInformation.s
 	@echo ... 2D_GameEngine/FrameManager.obj
 	@echo ... 2D_GameEngine/FrameManager.i
 	@echo ... 2D_GameEngine/FrameManager.s
@@ -362,6 +446,9 @@ help:
 	@echo ... 2D_GameEngine/Map.obj
 	@echo ... 2D_GameEngine/Map.i
 	@echo ... 2D_GameEngine/Map.s
+	@echo ... 2D_GameEngine/Position.obj
+	@echo ... 2D_GameEngine/Position.i
+	@echo ... 2D_GameEngine/Position.s
 	@echo ... 2D_GameEngine/TextureManager.obj
 	@echo ... 2D_GameEngine/TextureManager.i
 	@echo ... 2D_GameEngine/TextureManager.s
@@ -371,6 +458,9 @@ help:
 	@echo ... models/Player.obj
 	@echo ... models/Player.i
 	@echo ... models/Player.s
+	@echo ... models/Puck.obj
+	@echo ... models/Puck.i
+	@echo ... models/Puck.s
 .PHONY : help
 
 

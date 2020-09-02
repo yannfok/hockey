@@ -42,3 +42,18 @@ GameObject::GameObject(const char *textureSheet, const int &x, const int &y, con
     this->m_dstRect.y = y;
 
 }
+
+GameObject::GameObject(const char * textureSheet,const int &x,const int &y,const int &w,const int &h,const int &r,const int &g,const int &b) {
+
+    this->m_texture = TextureManager::LoadTextureDeleteColor(textureSheet,r,g,b);
+    this->m_x = x;
+    this->m_y = y;
+    this->m_height = h;
+    this->m_width = w;
+
+    this->m_dstRect.w = w;
+    this->m_dstRect.h = h;
+    this->m_dstRect.x = x;
+    this->m_dstRect.y = y;
+
+}

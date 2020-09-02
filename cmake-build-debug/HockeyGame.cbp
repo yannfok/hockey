@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/Background.h">
 			<Option target="HockeyGame"/>
 		</Unit>
+		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/DisplayInformation.cpp">
+			<Option target="HockeyGame"/>
+		</Unit>
+		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/DisplayInformation.h">
+			<Option target="HockeyGame"/>
+		</Unit>
 		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/FrameManager.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
@@ -112,6 +118,12 @@
 		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/Map.h">
 			<Option target="HockeyGame"/>
 		</Unit>
+		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/Position.cpp">
+			<Option target="HockeyGame"/>
+		</Unit>
+		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/Position.h">
+			<Option target="HockeyGame"/>
+		</Unit>
 		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/TextureManager.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
@@ -125,6 +137,12 @@
 			<Option target="HockeyGame"/>
 		</Unit>
 		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/models/Player.h">
+			<Option target="HockeyGame"/>
+		</Unit>
+		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/models/Puck.cpp">
+			<Option target="HockeyGame"/>
+		</Unit>
+		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/models/Puck.h">
 			<Option target="HockeyGame"/>
 		</Unit>
 		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/CMakeLists.txt">

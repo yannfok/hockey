@@ -13,6 +13,7 @@ class GameObject {
 public:
     GameObject(const char * textureSheet,const int &x,const int &y);
     GameObject(const char * textureSheet,const int &x,const int &y,const int &w,const int &h);
+    GameObject(const char * textureSheet,const int &x,const int &y,const int &w,const int &h,const int &r,const int &g,const int &b);
     virtual ~GameObject() = default;
 
     void Update(const std::function<void(GameObject*)>& callback);

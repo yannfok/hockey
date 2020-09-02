@@ -10,6 +10,7 @@
 class TextureManager {
 public:
     static SDL_Texture * LoadTexture(const char * filename);
+    static SDL_Texture * LoadTextureDeleteColor(const char *filename,int r,int g,int b);
 };
 
 
