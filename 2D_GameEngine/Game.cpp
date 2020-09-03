@@ -17,6 +17,7 @@
 GameObject * player;
 GameObject * player2;
 GameObject * puck;
+std::vector<GameObject *> gameObjects;
 Background * bg;
 SDL_Renderer * Game::_renderer = nullptr;
 int Game::_width = 0;
@@ -74,7 +75,9 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     player = new GameObject("../assets/player_texture.bmp",Position::LEFT1().at(0),Position::LEFT1().at(1),35,200);
     player2 = new GameObject("../assets/player_texture.bmp",Position::LEFT2().at(0),Position::LEFT2().at(1),35,200);
     bg = new Background("../assets/background.bmp");
-    puck = new GameObject("../assets/kishtabis.bmp",Position::PUCK().at(0),Position::PUCK().at(1),120,120,0,0,0);
+    puck = new GameObject("../assets/puck.bmp",Position::PUCK().at(0),Position::PUCK().at(1),70,70,255,255,255);
+    gameObjects.push_back(player);
+    gameObjects.push_back(player2);
 
 }
 
@@ -120,9 +123,10 @@ void Game::update() {
     player2->Update([](GameObject * gameObject){
         Player::init(gameObject);
     });
-    puck->Update([](GameObject * gameObject){
+    puck->Update([](GameObject * gameObject,const std::vector<GameObject*>& objects){
         Puck::init(gameObject);
-    });
+        Puck::Move(gameObject,objects);
+    },gameObjects);
 
 }
 

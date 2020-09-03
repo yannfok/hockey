@@ -8,6 +8,7 @@
 
 #include "Game.h"
 #include <functional>
+#include <vector>
 
 class GameObject {
 public:
@@ -17,6 +18,7 @@ public:
     virtual ~GameObject() = default;
 
     void Update(const std::function<void(GameObject*)>& callback);
+    void Update(const std::function<void(GameObject*,std::vector<GameObject*>)>& callback,std::vector<GameObject*> vector);
     void Render();
 
     SDL_Rect getSrcRect() const{return this->m_srcRect;}
@@ -33,8 +35,10 @@ public:
     void setSrcRectY(const int &y){this->m_srcRect.y = y;}
     void setSrcRectW(const int &w){this->m_srcRect.w = w;}
     void setSrcRectH(const int &h){this->m_srcRect.h = h;}
-    void setX(const int &x){this->m_x = x;}
-    void setY(const int &y){this->m_y = y;}
+    void setX(const int &x){this->m_x = x;this->m_dstRect.x = x;}
+    void setY(const int &y){this->m_y = y;this->m_dstRect.y = y;}
+    bool windowCollision();
+    bool gameObjectCollision(GameObject * other);
 
 protected:
 

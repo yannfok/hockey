@@ -3,6 +3,8 @@
 //
 
 #include "GameObject.h"
+
+#include <utility>
 #include "TextureManager.h"
 
 GameObject::GameObject(const char *textureSheet,const int &x,const int &y) {
@@ -55,5 +57,23 @@ GameObject::GameObject(const char * textureSheet,const int &x,const int &y,const
     this->m_dstRect.h = h;
     this->m_dstRect.x = x;
     this->m_dstRect.y = y;
+
+}
+
+bool GameObject::windowCollision() {
+
+    return this->m_y <= 0 || this->m_x <= 0 || this->m_x+this->m_width >= Game::_width || this->m_y+this->m_height >= Game::_height;
+
+}
+
+bool GameObject::gameObjectCollision(GameObject *other) {
+
+    return ((other->m_x + other->m_width >= this->m_x && other->m_y+other->m_height >= this->m_y) && (other->m_x <= this->m_x && other->m_y <= this->m_y)) || ((other->m_x + other->m_width >= this->m_x+this->m_width && other->m_y+other->m_height >= this->m_y + this->m_height) && (other->m_x <= this->m_x+this->m_width && other->m_y <= this->m_y+this->m_height));
+
+}
+
+void GameObject::Update(const std::function<void(GameObject *,std::vector<GameObject*>)> &callback,std::vector<GameObject*> objects) {
+
+    callback(this,std::move(objects));
 
 }
