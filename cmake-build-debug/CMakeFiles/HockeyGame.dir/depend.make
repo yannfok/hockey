@@ -3,8 +3,12 @@
 
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Background.cpp.obj: ../2D_GameEngine/Background.cpp
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Background.cpp.obj: ../2D_GameEngine/Background.h
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Background.cpp.obj: ../2D_GameEngine/Controller.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Background.cpp.obj: ../2D_GameEngine/Game.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Background.cpp.obj: ../2D_GameEngine/GameObject.h
+
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Controller.cpp.obj: ../2D_GameEngine/Controller.cpp
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Controller.cpp.obj: ../2D_GameEngine/Controller.h
 
 CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.obj: C:/MinGW/include/SDL2/SDL.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/DisplayInformation.cpp.obj: C:/MinGW/include/SDL2/SDL_assert.h
@@ -105,6 +109,7 @@ CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: C:/MinGW/include/SDL2/SDL_
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: C:/MinGW/include/SDL2/begin_code.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: C:/MinGW/include/SDL2/close_code.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../2D_GameEngine/Background.h
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../2D_GameEngine/Controller.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../2D_GameEngine/DisplayInformation.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../2D_GameEngine/FrameManager.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../2D_GameEngine/Game.cpp
@@ -112,8 +117,10 @@ CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../2D_GameEngine/Game.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../2D_GameEngine/GameObject.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../2D_GameEngine/Position.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../2D_GameEngine/TextureManager.h
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../models/Physics.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../models/Player.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../models/Puck.h
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Game.cpp.obj: ../models/QuitButton.h
 
 CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj: C:/MinGW/include/SDL2/SDL.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj: C:/MinGW/include/SDL2/SDL_assert.h
@@ -161,15 +168,18 @@ CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj: C:/MinGW/include/SDL
 CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj: C:/MinGW/include/SDL2/SDL_video.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj: C:/MinGW/include/SDL2/begin_code.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj: C:/MinGW/include/SDL2/close_code.h
+CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj: ../2D_GameEngine/Controller.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj: ../2D_GameEngine/Game.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj: ../2D_GameEngine/GameObject.cpp
 CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj: ../2D_GameEngine/GameObject.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/GameObject.cpp.obj: ../2D_GameEngine/TextureManager.h
 
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Map.cpp.obj: ../2D_GameEngine/Controller.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Map.cpp.obj: ../2D_GameEngine/Game.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Map.cpp.obj: ../2D_GameEngine/Map.cpp
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Map.cpp.obj: ../2D_GameEngine/Map.h
 
+CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.obj: ../2D_GameEngine/Controller.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.obj: ../2D_GameEngine/Game.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.obj: ../2D_GameEngine/Position.cpp
 CMakeFiles/HockeyGame.dir/2D_GameEngine/Position.cpp.obj: ../2D_GameEngine/Position.h
@@ -220,24 +230,42 @@ CMakeFiles/HockeyGame.dir/2D_GameEngine/TextureManager.cpp.obj: C:/MinGW/include
 CMakeFiles/HockeyGame.dir/2D_GameEngine/TextureManager.cpp.obj: C:/MinGW/include/SDL2/SDL_video.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/TextureManager.cpp.obj: C:/MinGW/include/SDL2/begin_code.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/TextureManager.cpp.obj: C:/MinGW/include/SDL2/close_code.h
+CMakeFiles/HockeyGame.dir/2D_GameEngine/TextureManager.cpp.obj: ../2D_GameEngine/Controller.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/TextureManager.cpp.obj: ../2D_GameEngine/Game.h
 CMakeFiles/HockeyGame.dir/2D_GameEngine/TextureManager.cpp.obj: ../2D_GameEngine/TextureManager.cpp
 CMakeFiles/HockeyGame.dir/2D_GameEngine/TextureManager.cpp.obj: ../2D_GameEngine/TextureManager.h
 
 CMakeFiles/HockeyGame.dir/main.cpp.obj: ../2D_GameEngine/Background.h
+CMakeFiles/HockeyGame.dir/main.cpp.obj: ../2D_GameEngine/Controller.h
 CMakeFiles/HockeyGame.dir/main.cpp.obj: ../2D_GameEngine/DisplayInformation.h
 CMakeFiles/HockeyGame.dir/main.cpp.obj: ../2D_GameEngine/FrameManager.h
 CMakeFiles/HockeyGame.dir/main.cpp.obj: ../2D_GameEngine/Game.h
 CMakeFiles/HockeyGame.dir/main.cpp.obj: ../2D_GameEngine/GameObject.h
 CMakeFiles/HockeyGame.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/HockeyGame.dir/main.cpp.obj: ../models/Physics.h
 
+CMakeFiles/HockeyGame.dir/models/Physics.cpp.obj: ../2D_GameEngine/Controller.h
+CMakeFiles/HockeyGame.dir/models/Physics.cpp.obj: ../2D_GameEngine/Game.h
+CMakeFiles/HockeyGame.dir/models/Physics.cpp.obj: ../2D_GameEngine/GameObject.h
+CMakeFiles/HockeyGame.dir/models/Physics.cpp.obj: ../models/Physics.cpp
+CMakeFiles/HockeyGame.dir/models/Physics.cpp.obj: ../models/Physics.h
+
+CMakeFiles/HockeyGame.dir/models/Player.cpp.obj: ../2D_GameEngine/Controller.h
 CMakeFiles/HockeyGame.dir/models/Player.cpp.obj: ../2D_GameEngine/Game.h
 CMakeFiles/HockeyGame.dir/models/Player.cpp.obj: ../2D_GameEngine/GameObject.h
 CMakeFiles/HockeyGame.dir/models/Player.cpp.obj: ../models/Player.cpp
 CMakeFiles/HockeyGame.dir/models/Player.cpp.obj: ../models/Player.h
 
+CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj: ../2D_GameEngine/Controller.h
 CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj: ../2D_GameEngine/Game.h
 CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj: ../2D_GameEngine/GameObject.h
+CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj: ../models/Physics.h
 CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj: ../models/Puck.cpp
 CMakeFiles/HockeyGame.dir/models/Puck.cpp.obj: ../models/Puck.h
+
+CMakeFiles/HockeyGame.dir/models/QuitButton.cpp.obj: ../2D_GameEngine/Controller.h
+CMakeFiles/HockeyGame.dir/models/QuitButton.cpp.obj: ../2D_GameEngine/Game.h
+CMakeFiles/HockeyGame.dir/models/QuitButton.cpp.obj: ../2D_GameEngine/GameObject.h
+CMakeFiles/HockeyGame.dir/models/QuitButton.cpp.obj: ../models/QuitButton.cpp
+CMakeFiles/HockeyGame.dir/models/QuitButton.cpp.obj: ../models/QuitButton.h
 

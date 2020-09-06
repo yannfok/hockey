@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\yanni\CLionProjects\HockeyGame
+CMAKE_SOURCE_DIR = C:\Users\Yannick\CLionProjects\hockey
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\yanni\CLionProjects\HockeyGame\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Yannick\CLionProjects\hockey\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = C:\Users\yanni\CLionProjects\HockeyGame\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\yanni\CLionProjects\HockeyGame\cmake-build-debug\CMakeFiles C:\Users\yanni\CLionProjects\HockeyGame\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Yannick\CLionProjects\hockey\cmake-build-debug\CMakeFiles C:\Users\Yannick\CLionProjects\hockey\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\yanni\CLionProjects\HockeyGame\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Yannick\CLionProjects\hockey\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -148,6 +148,33 @@ HockeyGame/fast:
 2D_GameEngine/Background.cpp.s:
 	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/2D_GameEngine/Background.cpp.s
 .PHONY : 2D_GameEngine/Background.cpp.s
+
+2D_GameEngine/Controller.obj: 2D_GameEngine/Controller.cpp.obj
+
+.PHONY : 2D_GameEngine/Controller.obj
+
+# target to build an object file
+2D_GameEngine/Controller.cpp.obj:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/2D_GameEngine/Controller.cpp.obj
+.PHONY : 2D_GameEngine/Controller.cpp.obj
+
+2D_GameEngine/Controller.i: 2D_GameEngine/Controller.cpp.i
+
+.PHONY : 2D_GameEngine/Controller.i
+
+# target to preprocess a source file
+2D_GameEngine/Controller.cpp.i:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/2D_GameEngine/Controller.cpp.i
+.PHONY : 2D_GameEngine/Controller.cpp.i
+
+2D_GameEngine/Controller.s: 2D_GameEngine/Controller.cpp.s
+
+.PHONY : 2D_GameEngine/Controller.s
+
+# target to generate assembly for a file
+2D_GameEngine/Controller.cpp.s:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/2D_GameEngine/Controller.cpp.s
+.PHONY : 2D_GameEngine/Controller.cpp.s
 
 2D_GameEngine/DisplayInformation.obj: 2D_GameEngine/DisplayInformation.cpp.obj
 
@@ -365,6 +392,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+models/Physics.obj: models/Physics.cpp.obj
+
+.PHONY : models/Physics.obj
+
+# target to build an object file
+models/Physics.cpp.obj:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/models/Physics.cpp.obj
+.PHONY : models/Physics.cpp.obj
+
+models/Physics.i: models/Physics.cpp.i
+
+.PHONY : models/Physics.i
+
+# target to preprocess a source file
+models/Physics.cpp.i:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/models/Physics.cpp.i
+.PHONY : models/Physics.cpp.i
+
+models/Physics.s: models/Physics.cpp.s
+
+.PHONY : models/Physics.s
+
+# target to generate assembly for a file
+models/Physics.cpp.s:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/models/Physics.cpp.s
+.PHONY : models/Physics.cpp.s
+
 models/Player.obj: models/Player.cpp.obj
 
 .PHONY : models/Player.obj
@@ -419,6 +473,33 @@ models/Puck.cpp.s:
 	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/models/Puck.cpp.s
 .PHONY : models/Puck.cpp.s
 
+models/QuitButton.obj: models/QuitButton.cpp.obj
+
+.PHONY : models/QuitButton.obj
+
+# target to build an object file
+models/QuitButton.cpp.obj:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/models/QuitButton.cpp.obj
+.PHONY : models/QuitButton.cpp.obj
+
+models/QuitButton.i: models/QuitButton.cpp.i
+
+.PHONY : models/QuitButton.i
+
+# target to preprocess a source file
+models/QuitButton.cpp.i:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/models/QuitButton.cpp.i
+.PHONY : models/QuitButton.cpp.i
+
+models/QuitButton.s: models/QuitButton.cpp.s
+
+.PHONY : models/QuitButton.s
+
+# target to generate assembly for a file
+models/QuitButton.cpp.s:
+	$(MAKE) -f CMakeFiles\HockeyGame.dir\build.make CMakeFiles/HockeyGame.dir/models/QuitButton.cpp.s
+.PHONY : models/QuitButton.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -431,6 +512,9 @@ help:
 	@echo ... 2D_GameEngine/Background.obj
 	@echo ... 2D_GameEngine/Background.i
 	@echo ... 2D_GameEngine/Background.s
+	@echo ... 2D_GameEngine/Controller.obj
+	@echo ... 2D_GameEngine/Controller.i
+	@echo ... 2D_GameEngine/Controller.s
 	@echo ... 2D_GameEngine/DisplayInformation.obj
 	@echo ... 2D_GameEngine/DisplayInformation.i
 	@echo ... 2D_GameEngine/DisplayInformation.s
@@ -455,12 +539,18 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... models/Physics.obj
+	@echo ... models/Physics.i
+	@echo ... models/Physics.s
 	@echo ... models/Player.obj
 	@echo ... models/Player.i
 	@echo ... models/Player.s
 	@echo ... models/Puck.obj
 	@echo ... models/Puck.i
 	@echo ... models/Puck.s
+	@echo ... models/QuitButton.obj
+	@echo ... models/QuitButton.i
+	@echo ... models/QuitButton.s
 .PHONY : help
 
 

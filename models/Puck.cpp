@@ -5,7 +5,6 @@
 #include <iostream>
 #include "Puck.h"
 
-int Puck::_puck_Direction = -5;
 
 void Puck::init(GameObject *gameObject) {
 
@@ -19,7 +18,10 @@ void Puck::init(GameObject *gameObject) {
 void Puck::Move(GameObject *gameObject,const std::vector<GameObject*>& others) {
 
     if(gameObject->windowCollision() || gameObject->gameObjectCollision(others.at(0)) || gameObject->gameObjectCollision(others.at(1)))
-        Puck::_puck_Direction*=-1;
-    gameObject->setX(gameObject->getX()+Puck::_puck_Direction);
+        this->ResetVelocity(gameObject->getCollisionType());
+    gameObject->setX(gameObject->getX()+this->getXVelocity());
+    gameObject->setY(gameObject->getY()+this->getYVelocity());
 
 }
+
+Puck::Puck():Physics(){}

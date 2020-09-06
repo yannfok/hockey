@@ -10,6 +10,18 @@
 #include <functional>
 #include <vector>
 
+enum class Collision_Type : int{
+    NONE,
+    WINDOW_TOP,
+    WINDOW_LEFT,
+    WINDOW_RIGHT,
+    WINDOW_BOTTOM,
+    GAMEOBJECT_LEFT,
+    GAMEOBJECT_RIGHT,
+    GAMEOBJECT_TOP,
+    GAMEOBJECT_BOTTOM
+};
+
 class GameObject {
 public:
     GameObject(const char * textureSheet,const int &x,const int &y);
@@ -39,6 +51,7 @@ public:
     void setY(const int &y){this->m_y = y;this->m_dstRect.y = y;}
     bool windowCollision();
     bool gameObjectCollision(GameObject * other);
+    Collision_Type getCollisionType() const{return this->m_collision_type;}
 
 protected:
 
@@ -49,6 +62,8 @@ protected:
 
     SDL_Texture * m_texture;
     SDL_Rect m_srcRect{},m_dstRect{};
+
+    Collision_Type m_collision_type;
 
 };
 

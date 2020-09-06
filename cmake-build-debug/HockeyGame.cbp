@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="HockeyGame">
-				<Option output="C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/HockeyGame.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug"/>
+				<Option output="C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/HockeyGame.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 HockeyGame"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 HockeyGame"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="HockeyGame/fast">
-				<Option output="C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/HockeyGame.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug"/>
+				<Option output="C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/HockeyGame.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,103 +55,118 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 HockeyGame/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 HockeyGame/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/Background.cpp">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/Background.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/Background.h">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/Background.h">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/DisplayInformation.cpp">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/Controller.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/DisplayInformation.h">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/Controller.h">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/FrameManager.cpp">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/DisplayInformation.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/FrameManager.h">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/DisplayInformation.h">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/Game.cpp">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/FrameManager.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/Game.h">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/FrameManager.h">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/GameObject.cpp">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/Game.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/GameObject.h">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/Game.h">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/Map.cpp">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/GameObject.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/Map.h">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/GameObject.h">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/Position.cpp">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/Map.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/Position.h">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/Map.h">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/TextureManager.cpp">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/Position.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/2D_GameEngine/TextureManager.h">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/Position.h">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/main.cpp">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/TextureManager.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/models/Player.cpp">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/2D_GameEngine/TextureManager.h">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/models/Player.h">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/main.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/models/Puck.cpp">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/models/Physics.cpp">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/models/Puck.h">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/models/Physics.h">
 			<Option target="HockeyGame"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/CMakeLists.txt">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/models/Player.cpp">
+			<Option target="HockeyGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/models/Player.h">
+			<Option target="HockeyGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/models/Puck.cpp">
+			<Option target="HockeyGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/models/Puck.h">
+			<Option target="HockeyGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/models/QuitButton.cpp">
+			<Option target="HockeyGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/models/QuitButton.h">
+			<Option target="HockeyGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/cmake/FindSDL2.cmake">
-			<Option virtualFolder="CMake Files\cmake\"/>
-		</Unit>
-		<Unit filename="C:/Users/yanni/CLionProjects/HockeyGame/cmake/FindSDL2_image.cmake">
+		<Unit filename="C:/Users/Yannick/CLionProjects/hockey/cmake/FindSDL2.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
 	</Project>

@@ -10,16 +10,23 @@
 #include "FrameManager.h"
 #include "TextureManager.h"
 #include "Position.h"
-#include "GameObject.h"
 #include "Background.h"
 #include "DisplayInformation.h"
+#include "../models/QuitButton.h"
 
+//All objects in the game
 GameObject * player;
 GameObject * player2;
 GameObject * puck;
+QuitButton * quitButton;
+Puck * puckHandler;
 std::vector<GameObject *> gameObjects;
 Background * bg;
+
+//Renderer of the window
 SDL_Renderer * Game::_renderer = nullptr;
+
+//Two static public variables who defines the width and the height of the window
 int Game::_width = 0;
 int Game::_height = 0;
 
@@ -31,6 +38,7 @@ Game::Game()
     this->m_window = nullptr;
     this->m_isRunning = false;
     this->m_fpsManager = new FrameManager(FPS);
+    this->m_controller = new Controller();
 
 }
 
@@ -38,6 +46,7 @@ Game::~Game()
 {
 
     this->clean();
+    delete this->m_controller;
 
 }
 
@@ -72,10 +81,14 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     SDL_SetRenderDrawColor(_renderer,255,255,255,255);
     m_isRunning = true;
 
+    SDL_ShowCursor(SDL_DISABLE);
+
     player = new GameObject("../assets/player_texture.bmp",Position::LEFT1().at(0),Position::LEFT1().at(1),35,200);
-    player2 = new GameObject("../assets/player_texture.bmp",Position::LEFT2().at(0),Position::LEFT2().at(1),35,200);
+    player2 = new GameObject("../assets/player_texture_2.bmp",Position::LEFT2().at(0),Position::LEFT2().at(1),35,200);
     bg = new Background("../assets/background.bmp");
     puck = new GameObject("../assets/puck.bmp",Position::PUCK().at(0),Position::PUCK().at(1),70,70,255,255,255);
+    puckHandler = new Puck();
+    quitButton = new QuitButton();
     gameObjects.push_back(player);
     gameObjects.push_back(player2);
 
@@ -83,17 +96,18 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
 
 void Game::handleEvents() {
 
-    SDL_Event event;
-    SDL_PollEvent(&event);
-    switch (event.type)
+    if(!m_controller->getQuit())
     {
-        case SDL_QUIT:
-            m_isRunning = false;
-            break;
-        default:
-            break;
-    }
+        try {
+            m_controller->updateController();
+            Player::Movement(player,player2,m_controller);
+            quitButton->TriggerOnEnter(this,m_controller);
+        }catch (const std::exception &e)
+        {
+            cerr << e.what() << std::endl;
+        }
 
+    } else this->m_isRunning = false;
 }
 
 bool Game::running() {
@@ -105,7 +119,6 @@ void Game::clean() {
     SDL_DestroyWindow(m_window);
     SDL_DestroyRenderer(Game::_renderer);
     SDL_Quit();
-    std::cout << "Game cleaned" << std::endl;
 
 }
 
@@ -124,9 +137,15 @@ void Game::update() {
         Player::init(gameObject);
     });
     puck->Update([](GameObject * gameObject,const std::vector<GameObject*>& objects){
-        Puck::init(gameObject);
-        Puck::Move(gameObject,objects);
+        puckHandler->init(gameObject);
+        puckHandler->Move(gameObject,objects);
     },gameObjects);
+    quitButton->Update([](GameObject * gameObject){
+       QuitButton::Init(gameObject);
+    });
+    quitButton->GetTrigger()->Update([](GameObject * gameObject){
+        QuitButton::InitTrigger(gameObject);
+    });
 
 }
 
@@ -137,6 +156,8 @@ void Game::render() {
     player->Render();
     player2->Render();
     puck->Render();
+    quitButton->Render();
+    quitButton->GetTrigger()->Render();
     SDL_RenderPresent(Game::_renderer);
 
 }
@@ -153,5 +174,20 @@ void Game::loop(const std::function<void()>& callback) {
         if(m_fpsManager->getDelay() > frameTime)
             SDL_Delay(m_fpsManager->getDelay()-frameTime);
     }
+
+}
+
+void Game::stop() {
+
+    this->m_isRunning = false;
+
+}
+
+void Game::setIcon(const char * path) {
+
+    SDL_Surface * tmpSurface = nullptr;
+    tmpSurface = SDL_LoadBMP(path);
+    if(tmpSurface == nullptr) throw std::runtime_error((string)"Can't define Icon : "+(string)SDL_GetError());
+    SDL_SetWindowIcon(m_window,tmpSurface);
 
 }

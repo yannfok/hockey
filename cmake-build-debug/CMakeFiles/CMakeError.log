@@ -1,19 +1,19 @@
 Determining if the include file pthread.h exists failed with the following output:
-Change Dir: C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_0dcea/fast && C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0dcea.dir\build.make CMakeFiles/cmTC_0dcea.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0dcea.dir/CheckIncludeFile.c.obj
-C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_0dcea.dir\CheckIncludeFile.c.obj   -c C:\Users\yanni\CLionProjects\HockeyGame\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
-C:\Users\yanni\CLionProjects\HockeyGame\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: pthread.h: No such file or directory
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_b4ddd/fast && C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b4ddd.dir\build.make CMakeFiles/cmTC_b4ddd.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4ddd.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_b4ddd.dir\CheckIncludeFile.c.obj   -c C:\Users\Yannick\CLionProjects\hockey\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Yannick\CLionProjects\hockey\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: pthread.h: No such file or directory
     1 | #include <pthread.h>
       |          ^~~~~~~~~~~
 compilation terminated.
-CMakeFiles\cmTC_0dcea.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_0dcea.dir/CheckIncludeFile.c.obj' failed
-mingw32-make.exe[1]: *** [CMakeFiles/cmTC_0dcea.dir/CheckIncludeFile.c.obj] Error 1
-mingw32-make.exe[1]: Leaving directory 'C:/Users/yanni/CLionProjects/HockeyGame/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:120: recipe for target 'cmTC_0dcea/fast' failed
-mingw32-make.exe: *** [cmTC_0dcea/fast] Error 2
+CMakeFiles\cmTC_b4ddd.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_b4ddd.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_b4ddd.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Yannick/CLionProjects/hockey/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_b4ddd/fast' failed
+mingw32-make.exe: *** [cmTC_b4ddd/fast] Error 2
 
 
 

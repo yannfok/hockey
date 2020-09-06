@@ -7,6 +7,7 @@
 
 #include <functional>
 #include <SDL2/SDL.h>
+#include "Controller.h"
 #define FPS 60
 
 class FrameManager;
@@ -28,8 +29,10 @@ public:
 
     void init(const char * title,int xpos,int ypos,int width,int height,bool fullscreen);
 
+    void setIcon(const char * path);
     void handleEvents();
     void update();
+    void stop();
     void render();
     void clean();
     void loop(const std::function<void()>& callback);
@@ -43,6 +46,7 @@ public:
 private:
     bool m_isRunning;
     SDL_Window * m_window;
+    Controller * m_controller;
 };
 
 

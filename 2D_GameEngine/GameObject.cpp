@@ -15,6 +15,8 @@ GameObject::GameObject(const char *textureSheet,const int &x,const int &y) {
     this->m_height = 64;
     this->m_width = 64;
 
+    this->m_collision_type = Collision_Type::NONE;
+
 }
 
 void GameObject::Update(const std::function<void(GameObject*)>& callback) {
@@ -43,6 +45,8 @@ GameObject::GameObject(const char *textureSheet, const int &x, const int &y, con
     this->m_dstRect.x = x;
     this->m_dstRect.y = y;
 
+    this->m_collision_type = Collision_Type::NONE;
+
 }
 
 GameObject::GameObject(const char * textureSheet,const int &x,const int &y,const int &w,const int &h,const int &r,const int &g,const int &b) {
@@ -58,17 +62,59 @@ GameObject::GameObject(const char * textureSheet,const int &x,const int &y,const
     this->m_dstRect.x = x;
     this->m_dstRect.y = y;
 
+    this->m_collision_type = Collision_Type::NONE;
+
 }
 
 bool GameObject::windowCollision() {
 
-    return this->m_y <= 0 || this->m_x <= 0 || this->m_x+this->m_width >= Game::_width || this->m_y+this->m_height >= Game::_height;
+    bool result = this->m_y <= 0 || this->m_x <= 0 || this->m_x+this->m_width >= Game::_width || this->m_y+this->m_height >= Game::_height;
+    if(result)
+    {
 
+        if(m_x+m_width>=Game::_width)
+            this->m_collision_type = Collision_Type::WINDOW_RIGHT;
+        else if(m_y+m_height>=Game::_height)
+            this->m_collision_type = Collision_Type::WINDOW_BOTTOM;
+        else if(m_y<=0)
+            this->m_collision_type = Collision_Type::WINDOW_TOP;
+        else if(m_x<=0)
+            this->m_collision_type = Collision_Type::WINDOW_LEFT;
+    }
+    return result;
 }
 
 bool GameObject::gameObjectCollision(GameObject *other) {
 
-    return ((other->m_x + other->m_width >= this->m_x && other->m_y+other->m_height >= this->m_y) && (other->m_x <= this->m_x && other->m_y <= this->m_y)) || ((other->m_x + other->m_width >= this->m_x+this->m_width && other->m_y+other->m_height >= this->m_y + this->m_height) && (other->m_x <= this->m_x+this->m_width && other->m_y <= this->m_y+this->m_height));
+    if((other->m_y <= this->m_y && this->m_y <= other->m_y+other->m_height) && (other->m_x <= this->m_x && this->m_x <= other->m_x + other->m_width))
+    {
+
+        this->m_collision_type = Collision_Type::GAMEOBJECT_RIGHT;
+        return true;
+
+    }
+    else if((other->m_x <= this->m_x && this->m_x <= other->m_x + other->m_width) && (other->m_y + other->m_height >= this->m_y + this->m_height && this->m_y + this->m_height >= other->m_y))
+    {
+
+        this->m_collision_type = Collision_Type::GAMEOBJECT_TOP;
+        return true;
+
+    }
+    else if((other->m_y <= this->m_y + this->m_height && this->m_y + this->m_height <= other->m_y+other->m_height) && ( other->m_x + other->m_width >= this->m_x + this->m_width && this->m_x + this->m_width >= other->m_x))
+    {
+
+        this->m_collision_type = Collision_Type::GAMEOBJECT_LEFT;
+        return true;
+
+    }
+    else if((other->m_x <= this->m_x + this->m_width && this->m_x + this->m_width <= other->m_x+other->m_width) && (other->m_y <= this->m_y && this->m_y <= other->m_y + other->m_height))
+    {
+
+        this->m_collision_type = Collision_Type::GAMEOBJECT_BOTTOM;
+        return true;
+
+    }
+    return false;
 
 }
 
