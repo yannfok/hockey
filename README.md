@@ -26,7 +26,7 @@ So I recommend using the Clion IDE in order to compile the project.
         /models
             - Contains Object that defines the Game
         /main.cpp
-            - contains the entry point
+            - Contains the entry point
 
 
 ## Details
